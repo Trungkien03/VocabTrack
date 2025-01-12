@@ -14,8 +14,10 @@ struct VocaTrackApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                ContentView()
+            }
+            .modelContainer(for: [User.self, Vocabulary.self, Topic.self, Syllable.self, Example.self, VocabularyTopic.self])
         }
-        .modelContainer(for: [User.self, Vocabulary.self, Topic.self, Syllable.self, Example.self, VocabularyTopic.self])
     }
 }

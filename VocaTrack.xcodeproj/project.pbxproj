@@ -26,6 +26,7 @@
 		C5644B022D33C27300DC4C6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644B012D33C27300DC4C6A /* SceneDelegate.swift */; };
 		C5644B042D33C29700DC4C6A /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644B032D33C29700DC4C6A /* AppReviewManager.swift */; };
 		C5644B062D33C2C400DC4C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644B052D33C2C400DC4C6A /* AppDelegate.swift */; };
+		C5644B0B2D33E06800DC4C6A /* UserProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644B0A2D33E06800DC4C6A /* UserProfileImage.swift */; };
 		C5AB5A292BDF329E0029D5CB /* VocaTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A282BDF329E0029D5CB /* VocaTrackApp.swift */; };
 		C5AB5A2B2BDF329E0029D5CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A2A2BDF329E0029D5CB /* ContentView.swift */; };
 		C5AB5A2D2BDF329F0029D5CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AB5A2C2BDF329F0029D5CB /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		C5644B012D33C27300DC4C6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C5644B032D33C29700DC4C6A /* AppReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewManager.swift; sourceTree = "<group>"; };
 		C5644B052D33C2C400DC4C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5644B0A2D33E06800DC4C6A /* UserProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileImage.swift; sourceTree = "<group>"; };
 		C5AB5A252BDF329E0029D5CB /* VocaTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocaTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AB5A282BDF329E0029D5CB /* VocaTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaTrackApp.swift; sourceTree = "<group>"; };
 		C5AB5A2A2BDF329E0029D5CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -255,6 +257,31 @@
 			path = Applications;
 			sourceTree = "<group>";
 		};
+		C5644B072D33E04400DC4C6A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C5644B082D33E04D00DC4C6A /* Common */,
+				C534CABB2D338EA100F33675 /* Features */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C5644B082D33E04D00DC4C6A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C5644B092D33E05300DC4C6A /* Components */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C5644B092D33E05300DC4C6A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C5644B0A2D33E06800DC4C6A /* UserProfileImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C5AB5A1C2BDF329E0029D5CB = {
 			isa = PBXGroup;
 			children = (
@@ -278,7 +305,7 @@
 				C5644AFA2D33C0BB00DC4C6A /* Applications */,
 				C5644AED2D33C06800DC4C6A /* Utils */,
 				C534CAD42D33997800F33675 /* Data */,
-				C534CABB2D338EA100F33675 /* Features */,
+				C5644B072D33E04400DC4C6A /* Presentation */,
 				C5AB5A282BDF329E0029D5CB /* VocaTrackApp.swift */,
 				C5AB5A2C2BDF329F0029D5CB /* Assets.xcassets */,
 				C5AB5A2E2BDF329F0029D5CB /* Preview Content */,
@@ -370,6 +397,7 @@
 				C5644AF02D33C07F00DC4C6A /* ProgressViewModel.swift in Sources */,
 				C5AB5A2B2BDF329E0029D5CB /* ContentView.swift in Sources */,
 				C5644AF92D33C0B500DC4C6A /* HomeViewModel.swift in Sources */,
+				C5644B0B2D33E06800DC4C6A /* UserProfileImage.swift in Sources */,
 				C5644AE62D33B82400DC4C6A /* VocabularyTopic.swift in Sources */,
 				C5644AF32D33C09100DC4C6A /* QuizViewModel.swift in Sources */,
 				C5644AE42D33B80B00DC4C6A /* Topic.swift in Sources */,

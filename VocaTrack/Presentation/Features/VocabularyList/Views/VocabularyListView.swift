@@ -13,7 +13,7 @@ struct VocabularyListView: View {
     @State private var searchText = ""
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VocabularyListingView(sort: sortOrder, searchString: searchText)
                 .navigationTitle("Vocabulary")
                 .navigationDestination(for: Vocabulary.self) { vocabulary in

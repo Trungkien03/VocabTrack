@@ -18,18 +18,20 @@ struct ProgressTrackView: View {
     ]
 
     var body: some View {
-        VStack {
-            Chart {
-                ForEach(progressData, id: \.0) { date, count in
-                    BarMark(x: .value("Date", date), y: .value("Words", count))
+        NavigationView {
+            ScrollView {
+                Chart {
+                    ForEach(progressData, id: \.0) { date, count in
+                        BarMark(x: .value("Date", date), y: .value("Words", count))
+                    }
                 }
-            }
-            .frame(height: 300)
-            .padding()
+                .frame(height: 300)
+                .padding()
 
-            Spacer()
+                Spacer()
+            }
+            .navigationTitle("Progress Overview")
         }
-        .navigationTitle("Progress Overview")
     }
 }
 

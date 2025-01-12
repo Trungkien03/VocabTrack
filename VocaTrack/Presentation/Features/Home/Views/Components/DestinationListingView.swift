@@ -17,17 +17,25 @@ struct VocabularyListingView: View {
             } else {
                 List {
                     ForEach(destinations) { destination in
-                        NavigationLink(destination: EditVocabView(vocabulary: destination)) {
+                        Button {
+                            selectedVocabulary = destination
+                        } label: {
                             VStack(alignment: .leading) {
                                 Text(destination.meaning)
                                     .font(.headline)
                                 Text(destination.createdAt.formatted(date: .long, time: .shortened))
+                                    .font(.subheadline)
+                                    .foregroundColor(.secondary)
                             }
                         }
                     }
                     .onDelete(perform: deleteDestination)
                 }
             }
+        }
+        .navigationTitle("Vocabulary")
+        .navigationDestination(for: Vocabulary.self) { vocabulary in
+            EditVocabView(vocabulary: vocabulary)
         }
     }
 
@@ -43,12 +51,8 @@ struct VocabularyListingView: View {
 
     func deleteDestination(_ indexSet: IndexSet) {
         for index in indexSet {
-            let desination = destinations[index]
-            modelContext.delete(desination)
+            let destination = destinations[index]
+            modelContext.delete(destination)
         }
     }
-}
-
-#Preview {
-    VocabularyListingView(sort: SortDescriptor(\Vocabulary.meaning), searchString: "")
 }
