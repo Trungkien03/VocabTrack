@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct VocabularyListView: View {
+    @Environment(\.modelContext) var modelContext
+    @State private var sortOrder = SortDescriptor(\Vocabulary.meaning)
+    @State private var searchText = ""
+
     var body: some View {
-        Text("List of Vocabulary")
-            .font(.headline)
-            .padding()
-            .navigationTitle("Vocabulary")
+        NavigationStack {
+            VocabularyListingView(sort: sortOrder, searchString: searchText)
+                .navigationTitle("Vocabulary List")
+                .navigationDestination(for: Vocabulary.self) { vocabulary in
+                    EditVocabView(vocabulary: vocabulary)
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink(destination: AddVocabularyView()) {
+                            Image(systemName: "plus")
+                        }
+                    }
+                }
+                .searchable(text: $searchText)
+        }
     }
 }
 

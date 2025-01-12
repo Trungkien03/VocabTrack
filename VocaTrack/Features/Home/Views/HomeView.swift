@@ -8,26 +8,79 @@
 import SwiftUI
 
 struct HomeView: View {
-    @Environment(\.modelContext) var modelContext
-    @State private var sortOrder = SortDescriptor(\Vocabulary.name)
     @State private var searchText = ""
 
     var body: some View {
-        NavigationStack {
-            DestinationListingView(sort: sortOrder, searchString: searchText)
-                .navigationTitle("Vocab Tracking")
-                .navigationDestination(for: Vocabulary.self) { vocabulary in
-                    EditAddVocabView(vocabulary: vocabulary)
-                }
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        NavigationLink(destination: EditAddVocabView(vocabulary: Vocabulary(), isNewVocabulary: true)) {
-                            Image(systemName: "plus")
-                        }
+        ScrollView {
+            VStack(spacing: 20) {
+                // Quick Stats
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Today's Stats")
+                        .font(.headline)
+                        .padding(.bottom, 5)
+                    HStack {
+                        StatView(title: "Words Learned", value: "15")
+                        StatView(title: "Words Reviewed", value: "8")
+                        StatView(title: "Total Words", value: "120")
                     }
                 }
-                .searchable(text: $searchText)
+                .padding()
+
+                // Quick Actions
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Quick Actions")
+                        .font(.headline)
+                        .padding(.bottom, 5)
+                    HStack {
+                        QuickActionButton(icon: "plus", title: "Add Word")
+                        QuickActionButton(icon: "list.bullet", title: "Vocabulary List")
+                        QuickActionButton(icon: "bolt", title: "Start Quiz")
+                    }
+                }
+                .padding()
+
+                Spacer()
+            }
+            .navigationTitle("Home")
+            .searchable(text: $searchText)
         }
+    }
+}
+
+// MARK: - Supporting Views
+
+struct StatView: View {
+    let title: String
+    let value: String
+
+    var body: some View {
+        VStack {
+            Text(value)
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            Text(title)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+        }
+        .frame(maxWidth: .infinity)
+    }
+}
+
+struct QuickActionButton: View {
+    let icon: String
+    let title: String
+
+    var body: some View {
+        VStack {
+            Image(systemName: icon)
+                .font(.title)
+                .foregroundColor(.blue)
+                .padding()
+                .background(Circle().fill(Color.blue.opacity(0.2)))
+            Text(title)
+                .font(.subheadline)
+        }
+        .frame(maxWidth: .infinity)
     }
 }
 

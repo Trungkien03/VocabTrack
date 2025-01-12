@@ -1,19 +1,13 @@
-//
-//  DestinationListingView.swift
-//  iTour
-//
-//  Created by Trung Kiên Nguyễn on 29/4/24.
-//
-
-import SwiftUI
 import SwiftData
+import SwiftUI
 
-struct DestinationListingView: View {
+struct VocabularyListingView: View {
     @Environment(\.modelContext) var modelContext
-    @Query(sort: [SortDescriptor(\Vocabulary.priority, order: .reverse), SortDescriptor(\Vocabulary.name)]) var destinations: [Vocabulary]
-    
+    @Query(sort: [SortDescriptor(\Vocabulary.createdAt, order: .reverse), SortDescriptor(\Vocabulary.meaning)]) var destinations: [Vocabulary]
+    @State private var selectedVocabulary: Vocabulary?
+
     var body: some View {
-        Group {
+        VStack {
             if destinations.isEmpty {
                 Text("No destinations available. Add some!")
                     .font(.headline)
@@ -23,11 +17,11 @@ struct DestinationListingView: View {
             } else {
                 List {
                     ForEach(destinations) { destination in
-                        NavigationLink(value: destination) {
+                        NavigationLink(destination: EditVocabView(vocabulary: destination)) {
                             VStack(alignment: .leading) {
-                                Text(destination.name)
+                                Text(destination.meaning)
                                     .font(.headline)
-                                Text(destination.date.formatted(date: .long, time: .shortened))
+                                Text(destination.createdAt.formatted(date: .long, time: .shortened))
                             }
                         }
                     }
@@ -36,18 +30,18 @@ struct DestinationListingView: View {
             }
         }
     }
-    
+
     init(sort: SortDescriptor<Vocabulary>, searchString: String) {
         _destinations = Query(filter: #Predicate {
             if searchString.isEmpty {
                 return true
             } else {
-                return $0.name.localizedStandardContains(searchString)
+                return $0.meaning.localizedStandardContains(searchString)
             }
-        } ,sort: [sort])
+        }, sort: [sort])
     }
-    
-    func deleteDestination(_ indexSet: IndexSet){
+
+    func deleteDestination(_ indexSet: IndexSet) {
         for index in indexSet {
             let desination = destinations[index]
             modelContext.delete(desination)
@@ -56,5 +50,5 @@ struct DestinationListingView: View {
 }
 
 #Preview {
-    DestinationListingView(sort: SortDescriptor(\Vocabulary.name), searchString: "")
+    VocabularyListingView(sort: SortDescriptor(\Vocabulary.meaning), searchString: "")
 }

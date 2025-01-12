@@ -12,14 +12,19 @@
 		C534CACF2D33992100F33675 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534CACE2D33992100F33675 /* QuizView.swift */; };
 		C534CAD12D33992800F33675 /* ProgressTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534CAD02D33992800F33675 /* ProgressTrackView.swift */; };
 		C534CAD32D33993000F33675 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C534CAD22D33993000F33675 /* SettingView.swift */; };
+		C5644AE12D33B7D800DC4C6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AE02D33B7D800DC4C6A /* User.swift */; };
+		C5644AE42D33B80B00DC4C6A /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AE32D33B80A00DC4C6A /* Topic.swift */; };
+		C5644AE62D33B82400DC4C6A /* VocabularyTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AE52D33B82400DC4C6A /* VocabularyTopic.swift */; };
+		C5644AE82D33B89F00DC4C6A /* Syllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AE72D33B89F00DC4C6A /* Syllable.swift */; };
+		C5644AEA2D33B8B200DC4C6A /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AE92D33B8B200DC4C6A /* Example.swift */; };
+		C5644AEC2D33BC2200DC4C6A /* EditVocabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AEB2D33BC2200DC4C6A /* EditVocabView.swift */; };
 		C5AB5A292BDF329E0029D5CB /* VocaTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A282BDF329E0029D5CB /* VocaTrackApp.swift */; };
 		C5AB5A2B2BDF329E0029D5CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A2A2BDF329E0029D5CB /* ContentView.swift */; };
 		C5AB5A2D2BDF329F0029D5CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AB5A2C2BDF329F0029D5CB /* Assets.xcassets */; };
 		C5AB5A302BDF329F0029D5CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AB5A2F2BDF329F0029D5CB /* Preview Assets.xcassets */; };
 		C5AB5A372BDF32DE0029D5CB /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A362BDF32DE0029D5CB /* Vocabulary.swift */; };
-		C5AB5A392BDF383C0029D5CB /* EditAddVocabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A382BDF383C0029D5CB /* EditAddVocabView.swift */; };
+		C5AB5A392BDF383C0029D5CB /* AddVocabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A382BDF383C0029D5CB /* AddVocabView.swift */; };
 		C5AB5A3B2BDF406F0029D5CB /* DestinationListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A3A2BDF406F0029D5CB /* DestinationListingView.swift */; };
-		C5AB5A3D2BDF44EA0029D5CB /* Sight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A3C2BDF44EA0029D5CB /* Sight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,15 +33,20 @@
 		C534CACE2D33992100F33675 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		C534CAD02D33992800F33675 /* ProgressTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTrackView.swift; sourceTree = "<group>"; };
 		C534CAD22D33993000F33675 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C5644AE02D33B7D800DC4C6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C5644AE32D33B80A00DC4C6A /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		C5644AE52D33B82400DC4C6A /* VocabularyTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyTopic.swift; sourceTree = "<group>"; };
+		C5644AE72D33B89F00DC4C6A /* Syllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syllable.swift; sourceTree = "<group>"; };
+		C5644AE92D33B8B200DC4C6A /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		C5644AEB2D33BC2200DC4C6A /* EditVocabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVocabView.swift; sourceTree = "<group>"; };
 		C5AB5A252BDF329E0029D5CB /* VocaTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocaTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AB5A282BDF329E0029D5CB /* VocaTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaTrackApp.swift; sourceTree = "<group>"; };
 		C5AB5A2A2BDF329E0029D5CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5AB5A2C2BDF329F0029D5CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5AB5A2F2BDF329F0029D5CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5AB5A362BDF32DE0029D5CB /* Vocabulary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
-		C5AB5A382BDF383C0029D5CB /* EditAddVocabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddVocabView.swift; sourceTree = "<group>"; };
+		C5AB5A382BDF383C0029D5CB /* AddVocabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVocabView.swift; sourceTree = "<group>"; };
 		C5AB5A3A2BDF406F0029D5CB /* DestinationListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationListingView.swift; sourceTree = "<group>"; };
-		C5AB5A3C2BDF44EA0029D5CB /* Sight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +158,7 @@
 		C534CAD42D33997800F33675 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C5644ADF2D33B7CB00DC4C6A /* Models */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -162,10 +173,24 @@
 		C534CAD62D3399C900F33675 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C5AB5A382BDF383C0029D5CB /* EditAddVocabView.swift */,
+				C5AB5A382BDF383C0029D5CB /* AddVocabView.swift */,
 				C5AB5A3A2BDF406F0029D5CB /* DestinationListingView.swift */,
+				C5644AEB2D33BC2200DC4C6A /* EditVocabView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C5644ADF2D33B7CB00DC4C6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5644AE32D33B80A00DC4C6A /* Topic.swift */,
+				C5AB5A362BDF32DE0029D5CB /* Vocabulary.swift */,
+				C5644AE02D33B7D800DC4C6A /* User.swift */,
+				C5644AE52D33B82400DC4C6A /* VocabularyTopic.swift */,
+				C5644AE72D33B89F00DC4C6A /* Syllable.swift */,
+				C5644AE92D33B8B200DC4C6A /* Example.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C5AB5A1C2BDF329E0029D5CB = {
@@ -208,8 +233,6 @@
 		C5AB5A3E2BDF46FC0029D5CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C5AB5A362BDF32DE0029D5CB /* Vocabulary.swift */,
-				C5AB5A3C2BDF44EA0029D5CB /* Sight.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,16 +308,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5AB5A2B2BDF329E0029D5CB /* ContentView.swift in Sources */,
+				C5644AE62D33B82400DC4C6A /* VocabularyTopic.swift in Sources */,
+				C5644AE42D33B80B00DC4C6A /* Topic.swift in Sources */,
+				C5644AE12D33B7D800DC4C6A /* User.swift in Sources */,
 				C534CACB2D33990A00F33675 /* HomeView.swift in Sources */,
 				C534CACF2D33992100F33675 /* QuizView.swift in Sources */,
 				C534CACD2D33991A00F33675 /* VocabularyListView.swift in Sources */,
 				C5AB5A292BDF329E0029D5CB /* VocaTrackApp.swift in Sources */,
 				C5AB5A372BDF32DE0029D5CB /* Vocabulary.swift in Sources */,
-				C5AB5A3D2BDF44EA0029D5CB /* Sight.swift in Sources */,
+				C5644AE82D33B89F00DC4C6A /* Syllable.swift in Sources */,
+				C5644AEC2D33BC2200DC4C6A /* EditVocabView.swift in Sources */,
 				C534CAD12D33992800F33675 /* ProgressTrackView.swift in Sources */,
-				C5AB5A392BDF383C0029D5CB /* EditAddVocabView.swift in Sources */,
+				C5AB5A392BDF383C0029D5CB /* AddVocabView.swift in Sources */,
 				C5AB5A3B2BDF406F0029D5CB /* DestinationListingView.swift in Sources */,
 				C534CAD32D33993000F33675 /* SettingView.swift in Sources */,
+				C5644AEA2D33B8B200DC4C6A /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

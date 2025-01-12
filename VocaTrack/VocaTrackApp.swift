@@ -1,6 +1,6 @@
 //
-//  iTourApp.swift
-//  iTour
+//  VocaTrackApp.swift
+//  VocaTrack
 //
 //  Created by Trung Kiên Nguyễn on 29/4/24.
 //
@@ -14,6 +14,6 @@ struct VocaTrackApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Vocabulary.self)
+        .modelContainer(for: [User.self, Vocabulary.self, Topic.self, Syllable.self, Example.self, VocabularyTopic.self])
     }
 }
