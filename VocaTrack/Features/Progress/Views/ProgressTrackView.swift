@@ -19,10 +19,6 @@ struct ProgressTrackView: View {
 
     var body: some View {
         VStack {
-            Text("Progress Overview")
-                .font(.headline)
-                .padding()
-
             Chart {
                 ForEach(progressData, id: \.0) { date, count in
                     BarMark(x: .value("Date", date), y: .value("Words", count))
@@ -33,7 +29,7 @@ struct ProgressTrackView: View {
 
             Spacer()
         }
-        .navigationTitle("Progress")
+        .navigationTitle("Progress Overview")
     }
 }
 

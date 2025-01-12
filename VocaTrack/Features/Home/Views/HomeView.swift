@@ -32,7 +32,12 @@ struct HomeView: View {
                         .font(.headline)
                         .padding(.bottom, 5)
                     HStack {
-                        QuickActionButton(icon: "plus", title: "Add Word")
+                        NavigationLink {
+                            AddVocabularyView()
+                        } label: {
+                            QuickActionButton(icon: "plus", title: "Add Word")
+                        }
+
                         QuickActionButton(icon: "list.bullet", title: "Vocabulary List")
                         QuickActionButton(icon: "bolt", title: "Start Quiz")
                     }

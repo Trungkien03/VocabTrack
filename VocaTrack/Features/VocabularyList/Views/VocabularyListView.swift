@@ -15,7 +15,7 @@ struct VocabularyListView: View {
     var body: some View {
         NavigationStack {
             VocabularyListingView(sort: sortOrder, searchString: searchText)
-                .navigationTitle("Vocabulary List")
+                .navigationTitle("Vocabulary")
                 .navigationDestination(for: Vocabulary.self) { vocabulary in
                     EditVocabView(vocabulary: vocabulary)
                 }

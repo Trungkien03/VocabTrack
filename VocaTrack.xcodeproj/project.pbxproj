@@ -18,6 +18,14 @@
 		C5644AE82D33B89F00DC4C6A /* Syllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AE72D33B89F00DC4C6A /* Syllable.swift */; };
 		C5644AEA2D33B8B200DC4C6A /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AE92D33B8B200DC4C6A /* Example.swift */; };
 		C5644AEC2D33BC2200DC4C6A /* EditVocabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AEB2D33BC2200DC4C6A /* EditVocabView.swift */; };
+		C5644AF02D33C07F00DC4C6A /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AEF2D33C07F00DC4C6A /* ProgressViewModel.swift */; };
+		C5644AF32D33C09100DC4C6A /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AF22D33C09100DC4C6A /* QuizViewModel.swift */; };
+		C5644AF62D33C0A500DC4C6A /* VocabularyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AF52D33C0A500DC4C6A /* VocabularyListViewModel.swift */; };
+		C5644AF92D33C0B500DC4C6A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644AF82D33C0B500DC4C6A /* HomeViewModel.swift */; };
+		C5644AFF2D33C1B500DC4C6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5644AFD2D33C1B500DC4C6A /* Localizable.strings */; };
+		C5644B022D33C27300DC4C6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644B012D33C27300DC4C6A /* SceneDelegate.swift */; };
+		C5644B042D33C29700DC4C6A /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644B032D33C29700DC4C6A /* AppReviewManager.swift */; };
+		C5644B062D33C2C400DC4C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5644B052D33C2C400DC4C6A /* AppDelegate.swift */; };
 		C5AB5A292BDF329E0029D5CB /* VocaTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A282BDF329E0029D5CB /* VocaTrackApp.swift */; };
 		C5AB5A2B2BDF329E0029D5CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AB5A2A2BDF329E0029D5CB /* ContentView.swift */; };
 		C5AB5A2D2BDF329F0029D5CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5AB5A2C2BDF329F0029D5CB /* Assets.xcassets */; };
@@ -39,6 +47,15 @@
 		C5644AE72D33B89F00DC4C6A /* Syllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syllable.swift; sourceTree = "<group>"; };
 		C5644AE92D33B8B200DC4C6A /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		C5644AEB2D33BC2200DC4C6A /* EditVocabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVocabView.swift; sourceTree = "<group>"; };
+		C5644AEF2D33C07F00DC4C6A /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
+		C5644AF22D33C09100DC4C6A /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		C5644AF52D33C0A500DC4C6A /* VocabularyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyListViewModel.swift; sourceTree = "<group>"; };
+		C5644AF82D33C0B500DC4C6A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C5644AFE2D33C1B500DC4C6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C5644B002D33C1C500DC4C6A /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C5644B012D33C27300DC4C6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C5644B032D33C29700DC4C6A /* AppReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewManager.swift; sourceTree = "<group>"; };
+		C5644B052D33C2C400DC4C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5AB5A252BDF329E0029D5CB /* VocaTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocaTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5AB5A282BDF329E0029D5CB /* VocaTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaTrackApp.swift; sourceTree = "<group>"; };
 		C5AB5A2A2BDF329E0029D5CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +102,7 @@
 		C534CAC02D3398C000F33675 /* VocabularyList */ = {
 			isa = PBXGroup;
 			children = (
+				C5644AF42D33C09900DC4C6A /* ViewModel */,
 				C534CAC62D3398F600F33675 /* Views */,
 			);
 			path = VocabularyList;
@@ -93,6 +111,7 @@
 		C534CAC22D3398CF00F33675 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				C5644AF12D33C08400DC4C6A /* ViewModel */,
 				C534CAC72D3398FB00F33675 /* Views */,
 			);
 			path = Quiz;
@@ -101,6 +120,7 @@
 		C534CAC32D3398D600F33675 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				C5644AEE2D33C07200DC4C6A /* ViewModel */,
 				C534CAC82D3398FE00F33675 /* Views */,
 			);
 			path = Progress;
@@ -166,6 +186,7 @@
 		C534CAD52D3399C100F33675 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C5644AF82D33C0B500DC4C6A /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -193,6 +214,47 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C5644AED2D33C06800DC4C6A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C5644AEE2D33C07200DC4C6A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5644AEF2D33C07F00DC4C6A /* ProgressViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C5644AF12D33C08400DC4C6A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5644AF22D33C09100DC4C6A /* QuizViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C5644AF42D33C09900DC4C6A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5644AF52D33C0A500DC4C6A /* VocabularyListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C5644AFA2D33C0BB00DC4C6A /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				C5644B012D33C27300DC4C6A /* SceneDelegate.swift */,
+				C5644B032D33C29700DC4C6A /* AppReviewManager.swift */,
+				C5644B052D33C2C400DC4C6A /* AppDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
 		C5AB5A1C2BDF329E0029D5CB = {
 			isa = PBXGroup;
 			children = (
@@ -212,9 +274,11 @@
 		C5AB5A272BDF329E0029D5CB /* VocaTrack */ = {
 			isa = PBXGroup;
 			children = (
+				C5644AFD2D33C1B500DC4C6A /* Localizable.strings */,
+				C5644AFA2D33C0BB00DC4C6A /* Applications */,
+				C5644AED2D33C06800DC4C6A /* Utils */,
 				C534CAD42D33997800F33675 /* Data */,
 				C534CABB2D338EA100F33675 /* Features */,
-				C5AB5A3E2BDF46FC0029D5CB /* Models */,
 				C5AB5A282BDF329E0029D5CB /* VocaTrackApp.swift */,
 				C5AB5A2C2BDF329F0029D5CB /* Assets.xcassets */,
 				C5AB5A2E2BDF329F0029D5CB /* Preview Content */,
@@ -228,13 +292,6 @@
 				C5AB5A2F2BDF329F0029D5CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C5AB5A3E2BDF46FC0029D5CB /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +336,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = C5AB5A1C2BDF329E0029D5CB;
 			productRefGroup = C5AB5A262BDF329E0029D5CB /* Products */;
@@ -296,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5AB5A302BDF329F0029D5CB /* Preview Assets.xcassets in Resources */,
+				C5644AFF2D33C1B500DC4C6A /* Localizable.strings in Resources */,
 				C5AB5A2D2BDF329F0029D5CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,12 +366,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5644AF62D33C0A500DC4C6A /* VocabularyListViewModel.swift in Sources */,
+				C5644AF02D33C07F00DC4C6A /* ProgressViewModel.swift in Sources */,
 				C5AB5A2B2BDF329E0029D5CB /* ContentView.swift in Sources */,
+				C5644AF92D33C0B500DC4C6A /* HomeViewModel.swift in Sources */,
 				C5644AE62D33B82400DC4C6A /* VocabularyTopic.swift in Sources */,
+				C5644AF32D33C09100DC4C6A /* QuizViewModel.swift in Sources */,
 				C5644AE42D33B80B00DC4C6A /* Topic.swift in Sources */,
 				C5644AE12D33B7D800DC4C6A /* User.swift in Sources */,
+				C5644B022D33C27300DC4C6A /* SceneDelegate.swift in Sources */,
 				C534CACB2D33990A00F33675 /* HomeView.swift in Sources */,
 				C534CACF2D33992100F33675 /* QuizView.swift in Sources */,
+				C5644B042D33C29700DC4C6A /* AppReviewManager.swift in Sources */,
 				C534CACD2D33991A00F33675 /* VocabularyListView.swift in Sources */,
 				C5AB5A292BDF329E0029D5CB /* VocaTrackApp.swift in Sources */,
 				C5AB5A372BDF32DE0029D5CB /* Vocabulary.swift in Sources */,
@@ -323,10 +388,23 @@
 				C5AB5A3B2BDF406F0029D5CB /* DestinationListingView.swift in Sources */,
 				C534CAD32D33993000F33675 /* SettingView.swift in Sources */,
 				C5644AEA2D33B8B200DC4C6A /* Example.swift in Sources */,
+				C5644B062D33C2C400DC4C6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5644AFD2D33C1B500DC4C6A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5644AFE2D33C1B500DC4C6A /* en */,
+				C5644B002D33C1C500DC4C6A /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C5AB5A312BDF329F0029D5CB /* Debug */ = {
@@ -388,6 +466,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -444,6 +523,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
