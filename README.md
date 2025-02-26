@@ -39,17 +39,17 @@
 
 ## 1. Introduction
 
-- **1.1. Document Purpose:**
+- **1.1. Document Purpose:** <a id="11-document-purpose"></a>
   This document provides a comprehensive overview of the Bonify React Native application’s architecture. Its main purpose is to:
   - Serve as a reference for new developers and team members.
   - Capture important design decisions and rationale behind the chosen architecture.
   - Ensure consistent and maintainable development practices across the team.
-- **1.2. Target Audience:**
+- **1.2. Target Audience:** <a id="12-target-audience"></a>
   This document is primarily aimed at:
   - React Native Developers who will implement features and maintain the codebase.
   - Tech Leads & Software Architects who want to understand the system’s structure and make informed decisions about further enhancements.
   - QA Engineers who need insights into the application flow and data handling to design test strategies.
-- **1.3. Scope:**
+- **1.3. Scope:** <a id="13-scope"></a>
   This document focuses on the frontend architecture of the Bonify React Native application, including:
   - Directory structure and how it reflects our chosen architectural pattern.
   - Data flow (state management, API interactions, domain logic).
